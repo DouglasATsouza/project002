@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Task</title>
+</head>
+<body style="color: white; background-image: radial-gradient(#243345, #111315); background-attachment: fixed;">
+    <button onclick="sair()">Sair</button>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 id="logado"></h1>            
+        <h1 class="display-6 mb-3">Segue abaixo a sua Planilha de Atividades:</h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="formulario" class="row justify-content-center mb4" autocomplete="off">
+            <div class="col-10 col-md-8 mb-3">
+                <label for="descricao">Descrição</label>
+                <input class="form-control" id="descricao" type="text" placeholder="Descricao">
+            </div>
+            <div class="col-10 col-md-8 mb-3">
+                <label for="detalhamento">Detalhamento</label>
+                <input class="form-control" id="detalhamento" type="text" placeholder="Detalhamento" >
+            </div>
+            <div class="col-10 col-md-8 mb-3">
+                <label for="prioridade">Prioridade</label>
+                <input class="form-control" id="prioridade" type="text" placeholder="Nível de prioridade">
+            </div>
+            <div class="col-10 col-md-8">
+                <input class="btn btn-success add-btn" type="submit" value="Adicionar Tarefa">
+            </div>
+        </form>
+        <div class="col-12 col-md-10 mt-4">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Detalhamento</th>
+                        <th>Prioridade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="lista">
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+    <script src="./scriptTask.js"></script>
+</html>

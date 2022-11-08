@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body class="bg">
+    <div class="container">
+        <div class="card">
+            <h1>Cadastrar-se</h1>
+            <div id="msgError"></div>
+            <div id="msgSucess"></div>
+            <br>
+            <div class="label-float">
+                <input type="text" id="nome" placeholder="Digite aqui o seu nome completo" autocomplete="off"><br><br>
+                <label id="labelNome" for="nome"></label>            
+            </div>
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="Digite um nome de usuário" autocomplete="off"><br><br>
+                <label id="labelUsuario" for="usuario"></label>            
+            </div>
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="Digite sua senha" autocomplete="off"><br><br>
+                <label id="labelSenha" for="senha"></label>            
+            </div>
+            <div class="label-float">
+                <input type="password" id="confirmSenha" placeholder="Confirme sua senha" autocomplete="off"><br><br>
+                <label id="labelConfirmSenha" for="confirmsenha"></label>            
+            </div><br>
+            <div class="justify-center">
+                <button onclick="cadastrar()" >Cadastrar</button>
+            </div><br>
+        </div>
+    </div>
+    <script src="./scriptValidation.js"></script>   
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body class="bg">
+    <div class="container">
+        <div class="card">
+            <h1>Login</h1>
+            <div id="msgError"></div><br>
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="Digite aqui o seu usuário"><br><br>
+                <label id="userLabel" for="usuario"></label>            
+            </div>
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="Digite sua senha" autocomplete="off"><br><br>
+                <label id="senhaLabel" for="usuario"></label>            
+            </div>
+            <br>
+            <div class="justify-center">
+                <button onclick="entrar()">Entrar</button>
+            </div><br><br><br>
+            <div></div>
+            <p> Não tem uma conta?
+                <a href="./register.html"> Cadastre-se</a>
+            </p>
+        </div>
+    </div>
+    <script src="./scriptAutenticator.js"></script>
+ </body>
+</html>
